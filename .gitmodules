@@ -1,0 +1,3 @@
+[submodule "dynamicStack/historyNavigator"]
+	path = dynamicStack/historyNavigator
+	url = https://github.com/AbdelhakDouiba/historyNavigator.git
