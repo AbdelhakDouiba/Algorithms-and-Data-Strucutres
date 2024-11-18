@@ -1,5 +1,10 @@
 #include "tree.h"
 
+/**
+ * main - running and testing bst functions.
+ * 
+ * Return: 0 at success, non zero value if it failed.
+ */
 int main(void)
 {
     int table[10] = {15, 10, 19, 4, 6, 9, 34, 1, 60, 20}, i;
