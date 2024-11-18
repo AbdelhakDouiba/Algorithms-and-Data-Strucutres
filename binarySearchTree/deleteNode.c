@@ -21,26 +21,18 @@ bst *deleteNode(bst *root, int key)
     else
     {
         if (root->right == NULL)
-        {
             root = root->left;
-            free(tmp);
-            return (root);
-        }
         else if (root->left == NULL)
-        {
             root = root->right;
-            free(tmp);
-            return (root);
-        }
-
-        while (p != NULL && p->left != NULL)
-            p = p->left;
-        if (p != NULL)
-            p->left = root->left;
-        root = root->right;
+	else
+	{
+            while (p != NULL && p->left != NULL)
+            	p = p->left;
+            if (p != NULL)
+            	p->left = root->left;
+            root = root->right;
+	}
         free(tmp);
-        return (root);
-
     }
     return (root);
 }
