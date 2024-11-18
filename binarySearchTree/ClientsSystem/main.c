@@ -1,5 +1,10 @@
 #include "client.h"
 
+/**
+ * main - running and testing clients management system
+ *
+ * Return: 0 if it succeed, non zero value if it failed.
+ */
 int main(void)
 {
     int orders, i, numberClients;
